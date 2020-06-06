@@ -38,7 +38,7 @@ export const setSelectedCity = payload => {
     };
 };
 
-export const  setWeather = payload => {
+export const setWeather = payload => {
     
     return dispatch =>{
         payload.forEach(city =>{
@@ -49,8 +49,8 @@ export const  setWeather = payload => {
             fetch(api_weather).then( data =>{
                 return data.json();
             }).then(weather_data => {
-                const data = transformWeather(weather_data);
-                dispatch(setWeatherCity({city, data}));
+                const weather = transformWeather(weather_data);
+                dispatch(setWeatherCity({ city, weather }));
             });
         });
     }
