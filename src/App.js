@@ -10,13 +10,22 @@ import ForecastExtendedContainer from './containers/ForecastExtendedContainer';
 import './App.css';
 
 const cities = [
-  "Roma,it",
+  "Arica,chl",
+  "Iquique,chl",
+  "Antofagasta,chl",
+  "Copiapo,chl",
+  "La Serena,chl",
+  "Valparaiso,chl",
   "Santiago,chl",
-  "Coquimbo,chl",
   "Rancagua,chl",
+  "Talca,chl",
   "Chillan,chl",
-  "Angol,chl",
-  "Puerto Montt, chl"
+  "Concepcion,chl",
+  "Temuco,chl",
+  "Valdivia,chl",
+  "Puerto Montt,chl",
+  "Coyhaique,chl",
+  "Punta Arenas,chl",
 ];
 
 
@@ -29,7 +38,7 @@ class App extends Component {
           <AppBar>
             <Toolbar>
               <Typografhy>
-                Aplicación de Climas
+                Aplicación de Climas Capitales de Chile
               </Typografhy>
             </Toolbar>
           </AppBar>
